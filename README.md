@@ -9,6 +9,11 @@ wget https://raw.githubusercontent.com/fergusch/weemote/master/install.sh | sh
 This script will automatically download and place the needed files where they need to go. Specifically, `weemote.py` will be downloaded to 
 `~/.weechat/python/autoload/` and `emotes.cfg` will be downloaded to `~/.weechat/python/weemote/`.
 
+Make sure you have the `configparser` library installed for Python 2.7:
+```
+pip install configparser
+```
+
 ## Defining emotes
 The install script will download the config file from this repo, which includes a couple of example emotes. To define your own, edit the `emotes.cfg` 
 file in your favorite editor: `~/.weechat/python/weemote/emotes.cfg`.
